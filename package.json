@@ -1,0 +1,22 @@
+{
+  "name": "pinterest-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pinterest scraping and profile-board sync via local bridge server and Chrome extension.",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "js/server.js",
+  "scripts": {
+    "setup": "npm install --prefix ext",
+    "build:ext": "npm run build --prefix ext",
+    "server": "node js/server.js",
+    "scrape": "node js/run-scrape.js",
+    "sync": "node js/run-sync.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "lodash": "^4.17.23",
+    "ws": "^8.18.3"
+  }
+}

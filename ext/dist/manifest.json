@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Pinterest Bridge",
+  "version": "1.0.0",
+  "description": "Connects to the local Pinterest bridge server and runs scrape/sync routines on pinterest.com.",
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.pinterest.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Pinterest Bridge"
+  }
+}
