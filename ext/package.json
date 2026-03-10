@@ -1,0 +1,16 @@
+{
+  "name": "pinterest-routine-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/background.js --bundle --format=iife --platform=browser --outfile=dist/background.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "lodash": "^4.17.23"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.9"
+  }
+}
